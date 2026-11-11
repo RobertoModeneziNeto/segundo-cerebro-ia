@@ -20,18 +20,23 @@ O NotebookLM funciona como um segundo cérebro, permitindo consultar as fontes a
 ## Áreas de conhecimento
 
 ### 1. Agentes de IA
+
 Fundamentos de agentes, ferramentas, memória, execução de tarefas, sistemas multiagentes, guardrails e integração com aplicações.
 
 ### 2. Automação com n8n
+
 Criação de workflows, integração com APIs, gatilhos, processamento de dados, agentes de IA e automações com intervenção humana.
 
 ### 3. Desenvolvimento assistido por IA
+
 Utilização de ferramentas como Claude Code, OpenAI Codex e Cursor para apoiar a escrita, análise, manutenção e revisão de código.
 
 ### 4. Integração com APIs de LLMs
+
 Function Calling, Structured Outputs, Responses API, MCP, gerenciamento de contexto, tratamento de erros e segurança.
 
 ### 5. Segurança e boas práticas
+
 Proteção de credenciais, validação de entradas, controle de permissões, prevenção de prompt injection, tratamento de falhas e confiabilidade das aplicações.
 
 ## Tecnologias e ferramentas estudadas
@@ -61,8 +66,11 @@ second-brain-ia/
 │   └── testes-e-validacao.md
 ├── materiais/
 │   ├── mapa-mental/
+│   │   ├── README.md
+│   │   └── mapa-mental.png
 │   ├── apresentacao/
 │   ├── guia-estudo/
+│   │   └── relatorio-ia-generativa.md
 │   └── quiz/
 └── evidencias/
     └── screenshots/
@@ -92,12 +100,12 @@ Os registros completos estão disponíveis em [`docs/testes-e-validacao.md`](doc
 
 ## Materiais produzidos
 
-Os materiais complementares serão organizados neste repositório:
+Os materiais complementares estão sendo organizados neste repositório:
 
-- Mapa mental dos principais conceitos.
-- Apresentação sobre o tema.
-- Guia de estudos.
-- Questionário para revisão do conhecimento.
+- **Mapa mental:** representação visual dos principais conceitos do projeto. [Visualizar mapa mental](materiais/mapa-mental/mapa-mental.png)
+- **Relatório e guia de estudos:** conteúdo sobre LLMs, engenharia de contexto, agentes de IA, desenvolvimento assistido por IA, integração com APIs e segurança. [Acessar relatório](materiais/guia-estudo/relatorio-ia-generativa.md)
+- **Apresentação:** material de apresentação do tema, ainda não produzido.
+- **Questionário:** perguntas para revisão e avaliação dos conhecimentos, ainda não produzido.
 
 ## Considerações finais
 
