@@ -1,134 +1,110 @@
-# 🧠 Segundo Cérebro — IA Generativa aplicada ao Desenvolvimento de Software
+# Second Brain — IA Generativa aplicada ao Desenvolvimento de Software
 
-Este repositório documenta a criação e utilização de um segundo cérebro utilizando o **Google NotebookLM**, com foco em Inteligência Artificial Generativa aplicada ao desenvolvimento de software.
+## Sobre o projeto
 
-O objetivo é reunir, organizar e conectar conhecimentos de diferentes fontes, utilizando a IA como ferramenta de apoio para estudar conceitos, compreender tecnologias, explorar aplicações práticas e desenvolver soluções.
+Este projeto foi desenvolvido como parte do bootcamp de Inteligência Artificial DXC e tem como objetivo construir uma base de conhecimento utilizando o **Google NotebookLM**, explorando aplicações práticas da IA generativa no desenvolvimento de software.
 
-## 🎯 Objetivo
+A proposta é reunir, organizar e conectar materiais técnicos sobre agentes de IA, automações com n8n, ferramentas de programação assistida por IA e integração de modelos de linguagem por meio de APIs.
 
-Construir uma base de conhecimento que permita consultar informações técnicas, entender conceitos e explorar exemplos práticos relacionados ao uso de IA no desenvolvimento de software.
+O NotebookLM funciona como um segundo cérebro, permitindo consultar as fontes adicionadas, investigar conceitos, elaborar soluções técnicas e validar conhecimentos por meio de perguntas e respostas.
 
-O projeto também busca avaliar a qualidade das respostas geradas pela IA, verificando se as informações estão fundamentadas nas fontes e identificando possíveis erros técnicos.
+## Objetivos
 
-## 📚 Temas estudados
+- Construir uma base de conhecimento sobre IA generativa aplicada ao desenvolvimento de software.
+- Estudar a arquitetura e o funcionamento de agentes de IA.
+- Explorar automações e integrações utilizando n8n.
+- Conhecer ferramentas de programação assistida por IA, como Claude Code, Codex e Cursor.
+- Compreender a integração de LLMs por meio de APIs, ferramentas e Function Calling.
+- Avaliar a qualidade das respostas geradas pela IA, identificando erros e limitações técnicas.
 
-O conteúdo foi organizado em quatro áreas principais:
+## Áreas de conhecimento
 
-### 1. Agentes de Inteligência Artificial
-- Fundamentos e funcionamento dos agentes de IA.
-- Uso de ferramentas e chamadas de funções.
-- Arquiteturas multiagentes.
-- Orquestração, memória e contexto.
-- Guardrails e segurança na execução de agentes.
-- OpenAI Agents SDK e Claude.
+### 1. Agentes de IA
+Fundamentos de agentes, ferramentas, memória, execução de tarefas, sistemas multiagentes, guardrails e integração com aplicações.
 
 ### 2. Automação com n8n
-- Fundamentos da plataforma n8n.
-- Criação de fluxos automatizados.
-- Integração com APIs e serviços externos.
-- Utilização de agentes de IA nos workflows.
-- Integração com modelos como OpenAI, Gemini e Claude.
-- Webhooks, triggers e processamento de dados.
-- Execução local e infraestrutura com Docker.
+Criação de workflows, integração com APIs, gatilhos, processamento de dados, agentes de IA e automações com intervenção humana.
 
-### 3. IA aplicada à programação
-- Desenvolvimento assistido por Inteligência Artificial.
-- Ferramentas como Claude Code, OpenAI Codex, Cursor e GitHub Copilot.
-- Geração, revisão e manutenção de código.
-- Desenvolvimento de aplicações com múltiplos arquivos.
-- Testes automatizados e análise de código.
-- Segurança e boas práticas no desenvolvimento com IA.
+### 3. Desenvolvimento assistido por IA
+Utilização de ferramentas como Claude Code, OpenAI Codex e Cursor para apoiar a escrita, análise, manutenção e revisão de código.
 
 ### 4. Integração com APIs de LLMs
-- Funcionamento de APIs de modelos de linguagem.
-- Function Calling e Tool Calling.
-- Responses API e Chat Completions API.
-- Structured Outputs e validação com Zod.
-- Integração com aplicações JavaScript e TypeScript.
-- Model Context Protocol (MCP).
-- Tratamento de erros, limites de requisições e segurança.
+Function Calling, Structured Outputs, Responses API, MCP, gerenciamento de contexto, tratamento de erros e segurança.
 
-## 🔎 Fontes de conhecimento
+### 5. Segurança e boas práticas
+Proteção de credenciais, validação de entradas, controle de permissões, prevenção de prompt injection, tratamento de falhas e confiabilidade das aplicações.
 
-Foram reunidas mais de 50 fontes de estudo, incluindo:
+## Tecnologias e ferramentas estudadas
 
-- Documentações oficiais.
-- Tutoriais técnicos.
-- Vídeos demonstrativos.
-- Exemplos de implementação.
-- Materiais sobre arquitetura e boas práticas.
-- Referências sobre segurança e infraestrutura.
+- Google NotebookLM
+- OpenAI API e Agents SDK
+- Anthropic Claude e Claude Code
+- OpenAI Codex
+- Cursor
+- n8n
+- Node.js
+- TypeScript
+- React
+- PostgreSQL e Prisma
+- Model Context Protocol (MCP)
+- Docker
 
-A prioridade foi utilizar fontes oficiais e materiais técnicos que apresentassem aplicações práticas das tecnologias estudadas.
+## Estrutura do repositório
 
-A relação das referências está disponível em [`fontes/referencias.md`](fontes/referencias.md).
-
-## 🤖 Ferramenta utilizada
-
-**Google NotebookLM**
-
-O NotebookLM foi utilizado como ambiente central para organizar as fontes, consultar informações, fazer perguntas técnicas, analisar arquiteturas e gerar materiais de estudo.
-
-A proposta é utilizar as fontes adicionadas como base para as respostas, reduzindo a dependência de informações externas e permitindo verificar a origem do conhecimento.
-
-**Acesse o notebook:** [INSERIR LINK PÚBLICO DO NOTEBOOK]
-
-## 🧪 Testes e validação
-
-Durante o desenvolvimento, foram realizadas consultas para avaliar a capacidade do NotebookLM de:
-
-- Explicar conceitos técnicos.
-- Comparar tecnologias e ferramentas.
-- Propor arquiteturas de software.
-- Desenvolver exemplos em TypeScript.
-- Explicar integrações entre aplicações e APIs.
-- Identificar problemas em implementações.
-- Corrigir códigos com base na documentação disponível.
-
-Um dos testes envolveu a implementação de Function Calling utilizando a Chat Completions API.
-
-Durante as revisões, foi identificado um erro recorrente no acesso ao array `choices`. Mesmo após diversas solicitações de correção e explicações sobre a estrutura da resposta, o NotebookLM continuou apresentando a sintaxe incorreta em alguns trechos.
-
-O acesso correto é:
-
-```typescript
-response.choices[0].message
+```text
+second-brain-ia/
+├── README.md
+├── fontes/
+│   └── referencias.md
+├── docs/
+│   ├── instrucoes-do-notebook.md
+│   └── testes-e-validacao.md
+├── materiais/
+│   ├── mapa-mental/
+│   ├── apresentacao/
+│   ├── guia-estudo/
+│   └── quiz/
+└── evidencias/
+    └── screenshots/
 ```
 
-Esse teste demonstrou a importância de revisar e validar tecnicamente os resultados produzidos por ferramentas de Inteligência Artificial, mesmo quando elas utilizam documentação como referência.
+## NotebookLM
 
-Os testes e suas respectivas evidências serão documentados em [`evidencias/perguntas-e-respostas.md`](evidencias/perguntas-e-respostas.md).
+O conhecimento foi organizado em um notebook com fontes técnicas, documentações oficiais, tutoriais e materiais complementares.
 
-## 📖 Materiais de estudo
+**Acesse o notebook:** [INSIRA AQUI O LINK PÚBLICO DO NOTEBOOKLM]
 
-O projeto também contempla a geração de materiais para facilitar a revisão e a compreensão dos conteúdos:
+## Testes e validação
 
+Foram realizados testes para avaliar a capacidade do NotebookLM de:
+
+- Explicar conceitos e relacionar diferentes tecnologias.
+- Propor arquiteturas de agentes de IA utilizando React, Node.js e TypeScript.
+- Elaborar soluções práticas com banco de dados e APIs externas.
+- Revisar códigos e identificar problemas de implementação.
+- Corrigir informações técnicas inconsistentes.
+
+Durante os testes, foram identificadas respostas incorretas, principalmente em exemplos de integração com APIs e identificação de modelos. Algumas correções foram solicitadas, mas nem todas foram aplicadas corretamente.
+
+Esses resultados reforçam a importância de conferir as respostas da IA com documentações oficiais e testes práticos.
+
+Os registros completos estão disponíveis em [`docs/testes-e-validacao.md`](docs/testes-e-validacao.md).
+
+## Materiais produzidos
+
+Os materiais complementares serão organizados neste repositório:
+
+- Mapa mental dos principais conceitos.
+- Apresentação sobre o tema.
 - Guia de estudos.
-- Mapa mental.
-- Apresentação.
-- Questionário de revisão.
+- Questionário para revisão do conhecimento.
 
-Os materiais serão organizados na pasta [`materiais-gerados/`](materiais-gerados/).
+## Considerações finais
 
-## 💡 Principais aprendizados
+O desenvolvimento deste projeto permitiu explorar como a IA generativa pode atuar como uma ferramenta de apoio ao desenvolvimento de software, desde a pesquisa e organização de conhecimento até a implementação, automação e revisão de aplicações.
 
-Durante o desenvolvimento deste projeto, foram explorados conceitos importantes sobre a utilização de IA no desenvolvimento de software.
-
-Entre os principais aprendizados estão:
-
-- Como agentes de IA podem utilizar ferramentas para executar tarefas.
-- Como automatizar processos integrando diferentes serviços pelo n8n.
-- Como utilizar LLMs em aplicações desenvolvidas com JavaScript e TypeScript.
-- Como estruturar chamadas de ferramentas e validar seus argumentos.
-- Como considerar segurança, memória, contexto e tratamento de erros na arquitetura.
-- Por que a validação humana continua sendo importante ao utilizar IA para desenvolver software.
-
-## 👨‍💻 Autor
-
-**Roberto Modenezi Neto**
-
-Estudante de Sistemas de Informação, interessado em desenvolvimento de software, Inteligência Artificial, automações e novas tecnologias.
+Mais do que reunir informações, a proposta foi avaliar criticamente as respostas geradas pela IA, identificar limitações e compreender a importância da validação técnica.
 
 ---
 
-*Projeto desenvolvido como atividade prática de construção de um segundo cérebro utilizando Inteligência Artificial.*
+**Projeto desenvolvido como parte do bootcamp de Inteligência Artificial DXC.**
