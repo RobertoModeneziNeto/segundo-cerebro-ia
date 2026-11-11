@@ -2,31 +2,33 @@
 
 Este documento reúne as fontes utilizadas na construção do segundo cérebro sobre Inteligência Artificial Generativa aplicada ao Desenvolvimento de Software.
 
-Foram priorizadas documentações oficiais, guias técnicos, cursos, tutoriais e materiais práticos.
+Foram utilizadas documentações oficiais, cursos, tutoriais, vídeos técnicos, demonstrações e materiais sobre arquitetura e segurança.
 
-As referências estão organizadas por assunto para facilitar a consulta e o aprofundamento dos estudos.
+As referências estão organizadas por categoria. Links repetidos foram consolidados.
 
 ## 1. Agentes de Inteligência Artificial
 
-Materiais sobre conceitos, arquitetura, funcionamento, orquestração e desenvolvimento de agentes.
-
-### OpenAI
+### OpenAI — documentação oficial
 
 - [Definição e conceitos de agentes](https://developers.openai.com/api/docs/guides/agents/define-agents)
-- [Visão geral de agentes](https://developers.openai.com/api/docs/guides/agents)
+- [Visão geral de agentes e infraestrutura](https://developers.openai.com/api/docs/guides/agents)
 - [Guia de seleção do modelo mais recente](https://developers.openai.com/api/docs/guides/latest-model)
 - [OpenAI Agents SDK](https://developers.openai.com/api/docs/guides/agents/sdk)
-- [Documentação do OpenAI Agents SDK para JavaScript/TypeScript](https://openai.github.io/openai-agents-js/)
-- [Referência TypeScript — withTranscriptionSpan](https://openai.github.io/openai-agents-js/openai/agents/variables/withtranscriptionspan/)
 
-### Anthropic
+### OpenAI Agents SDK — JavaScript/TypeScript
 
-- [Claude — boas práticas de engenharia de prompts](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices)
+- [Documentação geral do SDK](https://openai.github.io/openai-agents-js/)
+- [Sessions — gerenciamento de sessões](https://openai.github.io/openai-agents-js/guides/sessions)
+- [Guardrails — validações e proteções](https://openai.github.io/openai-agents-js/guides/guardrails)
+- [Running Agents — execução de agentes](https://openai.github.io/openai-agents-js/guides/running-agents)
+- [Results & State — resultados e estado](https://openai.github.io/openai-agents-js/guides/results)
+
+### Anthropic — Claude
+
+- [Claude Prompting Best Practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices)
 - [Documentação oficial da plataforma Claude](https://platform.claude.com/docs/en/home)
 
 ## 2. Automação com n8n
-
-Documentações, cursos e materiais relacionados à criação de workflows, integrações, automações e agentes de IA.
 
 ### Documentação e integrações
 
@@ -47,31 +49,54 @@ Documentações, cursos e materiais relacionados à criação de workflows, inte
 
 ## 3. IA aplicada à programação
 
-Referências sobre programação assistida por IA, engenharia de prompts, ferramentas de desenvolvimento e utilização de agentes na criação e manutenção de software.
+Materiais sobre programação assistida por IA, ferramentas agênticas, engenharia de prompts e desenvolvimento de software.
 
 ### GitHub e GitHub Copilot
 
-- [Guia de engenharia de prompts para LLMs](https://github.blog/engineering/prompt-engineering-guide-generative-ai-llms/)
-- [Como funcionam os modelos por trás do GitHub Copilot](https://github.blog/2023-05-17-inside-github-working-with-the-llms-behind-github-copilot/)
-- [Engenharia de prompts no GitHub Copilot](https://docs.github.com/en/copilot/concepts/prompting-and-context/prompt-engineering)
-- [GitHub Copilot Chat — Cheat Sheet](https://docs.github.com/en/copilot/reference/chat-cheat-sheet)
+- [GitHub Blog — Prompt Engineering Guide](https://github.blog/engineering/prompt-engineering-guide-generative-ai-llms/)
+- [Inside GitHub — Working with the LLMs behind Copilot](https://github.blog/2023-05-17-inside-github-working-with-the-llms-behind-github-copilot/)
+- [GitHub Copilot — Prompt Engineering](https://docs.github.com/en/copilot/concepts/prompting-and-context/prompt-engineering)
+- [GitHub Copilot — Chat Cheat Sheet](https://docs.github.com/en/copilot/reference/chat-cheat-sheet)
 
-### Claude Code e ferramentas de programação agêntica
+### Anthropic — vídeos sobre Claude Code
 
-Foram utilizados materiais demonstrativos sobre:
+Vídeos e demonstrações publicados no canal da Anthropic:
 
-- Claude Code.
-- OpenAI Codex CLI.
-- Codex App.
-- Integrações com IDEs JetBrains.
-- Cursor.
-- Estudos de caso de utilização do Claude Code em empresas como Factory, Ramp e Salesforce.
+- Introducing Claude Code
+- Projects are now a conversation with Claude
+- How the Claude Code team uses Claude Code
+- How Salesforce uses Claude Code
+- How Factory is building autonomous software with Claude
+- Building secure agents for knowledge work
+- How Ramp engineers work with AI agents at every step
 
-**Observação:** os títulos desses vídeos e estudos de caso foram fornecidos na relação de fontes do NotebookLM, mas alguns links originais não estavam disponíveis no material recebido. Os endereços serão adicionados quando forem recuperados.
+### OpenAI — vídeos sobre Codex e modelos abertos
+
+Vídeos e demonstrações publicados no canal da OpenAI:
+
+- Building with Open Models — apresentação dos modelos GPT-OSS 20B e GPT-OSS 120B.
+- OpenAI Codex in your code editor
+- Automatic code reviews with OpenAI Codex
+- Using OpenAI Codex CLI with GPT-5-Codex
+- Introducing the Codex app
+- Build beautiful frontends with OpenAI Codex
+- Codex in JetBrains IDEs
+- Using AI in humanitarian work
+
+### Cursor e engenharia de contexto
+
+- [Context Engineering & Coding Agents with Cursor](https://www.youtube.com/watch?v=3KAI__5dUn0)
+
+### Tutoriais da comunidade
+
+- OpenAI Agents SDK Tutorial (FULL SERIES) — Kody Simpson.
+- n8n Tutorial for Beginners - Build Your First Free AI Agent — Kevin Stratvert.
+
+**Observação:** os títulos dos vídeos acima foram identificados na relação exportada pelo NotebookLM. Quando o endereço direto não foi fornecido, o título foi preservado sem criar um link presumido.
 
 ## 4. Integração com APIs de LLMs
 
-Documentações sobre comunicação com modelos de linguagem, chamadas de ferramentas, estruturação de respostas e integração com aplicações.
+Documentações sobre integração com modelos de linguagem, chamadas de ferramentas, estruturação de respostas e comunicação entre aplicações.
 
 ### OpenAI API
 
@@ -80,22 +105,22 @@ Documentações sobre comunicação com modelos de linguagem, chamadas de ferram
 - [Model Context Protocol (MCP)](https://developers.openai.com/mcp)
 - [Responses API — visão geral](https://developers.openai.com/api/reference/responses/overview)
 - [Responses API vs. Chat Completions](https://platform.openai.com/docs/guides/responses-vs-chat-completions)
-- [Seleção de modelos](https://developers.openai.com/api/docs/guides/model-selection)
-- [Catálogo de modelos](https://developers.openai.com/api/docs/models)
+- [Model Selection — seleção de modelos](https://developers.openai.com/api/docs/guides/model-selection)
+- [Catálogo oficial de modelos](https://developers.openai.com/api/docs/models)
 
 ### Tratamento de erros e limites de requisições
 
-- [Códigos de erro da API](https://developers.openai.com/api/docs/guides/error-codes)
-- [Rate Limits](https://developers.openai.com/api/docs/guides/rate-limits)
+- [Error Codes — códigos de erro da API](https://developers.openai.com/api/docs/guides/error-codes)
+- [Rate Limits — limites de requisições](https://developers.openai.com/api/docs/guides/rate-limits)
 
 ### Engenharia de prompts
 
-- [Boas práticas de engenharia de prompts — OpenAI Help Center](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api)
-- [Guia de Prompt Engineering da OpenAI](https://platform.openai.com/docs/guides/prompt-engineering)
+- [OpenAI Prompt Engineering Best Practices](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api)
+- [Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering)
 
 ## 5. Segurança em IA Generativa e agentes
 
-Fontes sobre vulnerabilidades, proteção de aplicações com LLMs, segurança de agentes e boas práticas de arquitetura.
+Fontes sobre vulnerabilidades, segurança de aplicações com LLMs e boas práticas para construção de agentes.
 
 ### OWASP
 
@@ -108,39 +133,66 @@ Fontes sobre vulnerabilidades, proteção de aplicações com LLMs, segurança d
 
 ### AWS
 
-- [Guia de arquitetura de segurança para agentes de IA](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-security/owasp-top-ten.html)
+- [AWS Prescriptive Guidance — Mapping to OWASP Top 10](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-security/owasp-top-ten.html)
+
+### Google
+
+- Google Responsible Generative AI Toolkit.
+
+**Observação:** o endereço direto do toolkit do Google não foi disponibilizado na relação recebida.
 
 ## 6. Modelos abertos e execução local
 
-Materiais sobre modelos open-weight e alternativas para execução de modelos de linguagem em infraestrutura própria.
+Materiais sobre modelos open-weight e execução local de modelos de linguagem.
 
-- GPT-OSS 20B e GPT-OSS 120B.
-- Execução local com Ollama.
-- Utilização de LM Studio.
-- Infraestrutura com vLLM.
-- Execução utilizando Llama.cpp.
+### GPT-OSS
 
-**Observação:** a apresentação em vídeo sobre os modelos GPT-OSS foi utilizada como referência, mas o link original não estava disponível no material recebido.
+- Building with Open Models — apresentação dos modelos `gpt-oss-20b` e `gpt-oss-120b`, publicada pela OpenAI.
 
-## 7. Outras fontes e materiais complementares
+### Tecnologias de execução abordadas
 
-Também foram identificados materiais sobre:
+- Ollama.
+- LM Studio.
+- vLLM.
+- Llama.cpp.
 
-- Tratamento de erros assíncronos no Express.js.
-- Boas práticas de desempenho e confiabilidade em aplicações Express.
-- Toolkit de IA Responsável do Google.
-- Tutoriais de automação com Docker e Google Gemini.
-- Construção de agentes utilizando o OpenAI Agents SDK.
+**Observação:** o endereço direto do vídeo Building with Open Models não foi disponibilizado na relação recebida.
 
-Os links originais desses materiais ainda precisam ser recuperados para inclusão nesta lista.
+## 7. Vídeos, demonstrações e webinars complementares
+
+### Vimeo — demonstrações oficiais
+
+- [Realtime Agent Demo](https://vimeo.com/1105243382)
+- [Responses API — Tools & Features](https://vimeo.com/1105245596)
+- [Unlock Agentic Power — Agents SDK](https://vimeo.com/1105245234)
+
+### Webinars OpenAI
+
+- [Build Hour — Agentic Tool Calling](https://webinar.openai.com/on-demand/d1a99ac5-8de8-43c5-b209-21903d76b5b2)
+- [Build Hour — Built-in Tools](https://webinar.openai.com/on-demand/c17a0484-d32c-4359-b5ee-d318dad51586)
+
+## 8. Desenvolvimento backend com Express.js
+
+Materiais complementares sobre desenvolvimento de aplicações Node.js e boas práticas de implementação.
+
+- Express.js Error Handling — tratamento de erros.
+- Express.js Production Best Practices — desempenho e confiabilidade em produção.
+
+**Observação:** os endereços dessas duas referências não estavam disponíveis na relação recebida.
 
 ---
 
-## Observações sobre as referências
+## Organização das referências
 
-- Links repetidos foram consolidados para evitar duplicação.
-- As referências foram agrupadas de acordo com seus assuntos principais.
-- Documentações oficiais foram priorizadas sempre que disponíveis.
-- Vídeos e tutoriais sem endereço original identificado não foram substituídos por links presumidos.
+As fontes foram agrupadas em sete áreas de conhecimento e uma seção complementar:
 
-**Total:** a relação contempla as referências com endereços identificáveis na lista recebida, além dos materiais complementares que aguardam recuperação dos links originais.
+1. Agentes de Inteligência Artificial.
+2. Automação com n8n.
+3. IA aplicada à programação.
+4. Integração com APIs de LLMs.
+5. Segurança em IA Generativa e agentes.
+6. Modelos abertos e execução local.
+7. Vídeos, demonstrações e webinars.
+8. Desenvolvimento backend com Express.js.
+
+A lista foi organizada a partir das fontes apresentadas pelo NotebookLM. Referências sem URL direto foram mantidas com seus títulos, sem substituição por endereços não confirmados.
